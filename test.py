@@ -1,7 +1,7 @@
 #
 #   Test some various methods of doing I/O.
 #
-n = 1000000
+n = 10000000
 import os, timeit
 def ccompile(s):
    os.system(f"g++ -std=c++17 -O2 -o {s} {s}.cpp")
