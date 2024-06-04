@@ -9,6 +9,9 @@ three main operating systems.  Just clone the repo and type
 
     pypy3 test.py
 
+Ignore the lines with single values printed.  It will take a minute to
+run.
+
 These are the results I get on my Macbook Pro with M3 Max:
 
 ````
