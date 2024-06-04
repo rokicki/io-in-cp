@@ -2,7 +2,7 @@
 #   Test some various methods of doing I/O.
 #
 n = 10000000
-import os, timeit
+import os, timeit, random
 def ccompile(s):
    os.system(f"g++ -std=c++17 -O2 -o {s} {s}.cpp")
 def jcompile(s):
@@ -14,8 +14,10 @@ def timeexe(s, desc=""):
    t = timeit.default_timer() - t
    if desc != "":
       a.append([t, desc])
-ccompile("gen")
-os.system(f"./gen {n} > t.in")
+file = open("t.in", "w")
+for i in range(n):
+   file.write(str(random.randrange(2000000000)) + "\n")
+file.close()
 timeexe("pypy3 input.py < t.in")
 timeexe("pypy3 input.py < t.in", "pypy3")
 timeexe("pypy3 inputfloat.py < t.in", "pypy3 floats")
