@@ -61,7 +61,8 @@ This is what I get on my (older) Linux platform:
 
 The Java scanner implementation, which uses regex machinery under
 the hood and lots of unneeded memory allocations, is painfully
-slow on this (and all) platforms.
+slow on this (and all) platforms.  Don't believe me?  Check out this:
+https://github.com/openjdk-mirror/jdk7u-jdk/blob/master/src/share/classes/java/util/Scanner.java
 
 The thought of all the cycles that are burned unnecessarily on all the
 computers processing input using idiomatic I/O, and all the resulting
