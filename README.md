@@ -59,7 +59,7 @@ This is what I get on my (older) Linux platform:
 18.32149303299957 Java scanner float
 ````
 
-The Java scanner implementation, which uses regex machinery under
+The Java Scanner implementation, which uses regex machinery under
 the hood and lots of unneeded memory allocations, is painfully
 slow on this (and all) platforms.  Don't believe me?  Check out this:
 https://github.com/openjdk-mirror/jdk7u-jdk/blob/master/src/share/classes/java/util/Scanner.java
