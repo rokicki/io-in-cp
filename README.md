@@ -5,7 +5,9 @@ We find that it frequently is not.
 
 To run this you will need a computer with pypy3, python3, javac, java,
 and g++ all in the path.  This should be easily possible on any of the
-three main operating systems.
+three main operating systems.  Just clone the repo and type
+
+    pypy3 test.py
 
 These are the results I get on my Macbook Pro with M3 Max:
 
